@@ -77,9 +77,10 @@ section {
 
 }
 
-img {
+.hero-img {
     width: 75%;
     height: auto;
+    margin: 20px;
 
     object-fit: cover;
     cursor: pointer;
@@ -196,7 +197,7 @@ footer {
 
 form {
     width: 75%;
-    height: 60%;
+    height: auto;
     margin: 30px auto;
 
     background-color: var(--color-4);
@@ -212,7 +213,28 @@ form {
     color: var(--color-1);
 
     & input {
-        margin-bottom: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    & input:focus, textarea:focus {
+        outline-color: var(--color-3);
     }
     
+}
+
+.message-section {
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & img {
+        width: 15rem;
+        margin: 20px;
+    }
 }
