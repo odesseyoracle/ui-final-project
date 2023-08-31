@@ -74,14 +74,62 @@ section {
     width: 100%;
     height: calc(100% - 2rem);
     display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr 3fr 1fr;
+    grid-template: 4fr 2fr 0.5fr / 0.5fr 3fr 0.5fr;
     place-items: center;
 }
+
+.middle-section {
+    grid-area: 1 / 2 / 2 / 3;
+
+    border: 1px solid var(--color-3);
+    box-shadow: 10px 10px #ffd369;
+
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.middle-section img {
+    width: 40%;
+    height: 75%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    border: 1px solid #ffd369;
+}
+
+.short-bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+
+    & h2 {
+        font-size: 3rem;
+    }
+
+    & p {
+        font-size: 2rem;
+        margin: 2rem;
+}
+
+    & span {
+        font-size: 4rem;
+    }
+
+}
+
 
 .contact-form-link {
     width: 15rem;
     position: relative;
-    grid-area: 3 / 2 / 4 / 3;
+    grid-area: 2 / 2 / 3 / 3;
+    z-index: 2;
 
     animation: flying-bird 10s linear infinite;
     
