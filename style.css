@@ -75,7 +75,7 @@ section {
 }
 
 img {
-    width: 50%;
+    width: 75%;
     height: auto;
 
     object-fit: cover;
@@ -87,9 +87,9 @@ img {
     box-shadow: 10px 10px 0px var(--color-4);
 }
 
-img:hover {
+/* img:hover {
     animation: img-upscale 1s ease-in-out forwards;
-}
+} 
 
 @keyframes img-upscale {
     from {
@@ -100,7 +100,7 @@ img:hover {
         transform: scale(3) translate(30%, 30%);
         clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 
-        } 
+    }    */
 
 
 
@@ -110,7 +110,7 @@ img:hover {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
 }
