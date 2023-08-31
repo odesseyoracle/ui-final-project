@@ -247,9 +247,44 @@ form {
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    
     & img {
         width: 15rem;
         margin: 20px;
+        animation: flying-bird 4s linear infinite;
+    }
+    
+}
+
+@keyframes flying-bird {
+    0% {
+        transform: translateX(100%) translateY(10%) scale(0.5);
+        opacity: 0;
+    }
+    12.5% {
+        transform: translateX(75%) translateY(-10%);
+    }
+    25% {
+        transform: translateX(50%) translateY(10%);
+    }
+    37.5% {
+        transform: translateX(25%) translateY(-10%)
+    }
+    50% {
+        transform: translateX(0) translateY(10%) scale(1);
+        opacity: 1;
+    }
+    62.5% {
+        transform: translateX(-25%) translateY(-10%);        
+    }
+    75% {
+        transform: translateX(-50%) translateY(10%);
+    }
+    87.5% {
+        transform: translateX(-75%) translateY(-10%);
+    }
+    100% {
+        transform: translateX(-100%) translateY(10%) scale(0.5);
+        opacity: 0;
     }
 }
