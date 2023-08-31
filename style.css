@@ -204,6 +204,7 @@ form {
     border-radius: 10px;
 
     line-height: 2rem;
+    font-size: 1.5rem;
 
     display: flex;
     flex-direction: column;
@@ -219,13 +220,27 @@ form {
     & input:focus, textarea:focus {
         outline-color: var(--color-3);
     }
+
+    & input[type="submit"] {
+        width: 30%;
+        height: 2rem;
+        margin: 1rem;
+   
+        border: 1px solid var(--color-1);
+        background-color: var(--color-3);
+        color: var(--color-2);
+        font-size: 1.5rem;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: 5px 5px 1px var(--color-1);
+    }
     
 }
 
 .message-section {
     width: 80%;
     margin: auto;
-    padding: 40px;
+    padding: 30px;
     height: auto;
     display: flex;
     flex-direction: column;
