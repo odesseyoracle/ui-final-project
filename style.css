@@ -74,12 +74,31 @@ section {
     width: 100%;
     height: calc(100% - 2rem);
     display: grid;
-    grid-template: auto / 1fr 1fr;
-
-
+    grid-template: 1fr 1fr 1fr / 1fr 3fr 1fr;
+    place-items: center;
 }
 
+.contact-form-link {
+    width: 15rem;
+    position: relative;
+    grid-area: 3 / 2 / 4 / 3;
 
+    animation: flying-bird 10s linear infinite;
+    
+
+    & img {
+        width: 100%;
+    }
+    & span {
+        position: absolute;
+        width: 5rem;
+        top: 3.6rem;
+        left: 10.2rem;
+        background-color: #87C6C8;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
 
 
 
@@ -172,8 +191,8 @@ form {
 
 @keyframes flying-bird {
     0% {
-        transform: translateX(100%) translateY(10%) scale(0.5);
-        opacity: 0;
+        transform: translateX(100%) translateY(10%) scale(0.75);
+        opacity: 1;
     }
     12.5% {
         transform: translateX(75%) translateY(-10%);
@@ -198,7 +217,7 @@ form {
         transform: translateX(-75%) translateY(-10%);
     }
     100% {
-        transform: translateX(-100%) translateY(10%) scale(0.5);
-        opacity: 0;
+        transform: translateX(-100%) translateY(10%) scale(0.75);
+        opacity: 1;
     }
 }
