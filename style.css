@@ -53,6 +53,7 @@ h1 {
     font-family: 'Yesteryear', cursive;
     cursor: pointer;
     font-size: 2rem;
+    margin-right: 1rem;
 }
 
  ul {
@@ -257,7 +258,7 @@ main {
     align-items: center;
 
     & i {
-        font-size: 4rem;
+        font-size: 3rem;
         margin-right: 1rem;
         color: var(--color-1);
     }
@@ -320,24 +321,12 @@ main {
 
 
 
-/* .contact-form {
-
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-
-    position: absolute;
-    top: 0;
-    right: -20%;
-
-} */
 
 .contact-form-link {
     width: 16rem;
     z-index: 2;
     position: absolute;
+    left: 20%;
     bottom: 2rem;
 
 
@@ -351,7 +340,7 @@ main {
         position: absolute;
         width: 5rem;
         top: 3.6rem;
-        left: 10.4rem;
+        left: 6.5rem;
         background-color: #87C6C8;
         font-size: 1rem;
         font-weight: 600;
@@ -385,7 +374,19 @@ footer {
 @media (max-width: 768px) {
     body {
         height: auto;
-        overflow: auto;
+        overflow: auto;/* .contact-form {
+
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        
+            position: absolute;
+            top: 0;
+            right: -20%;
+        
+        } */
     }
 
     header {
@@ -490,7 +491,7 @@ form {
 
     & input[type="submit"] {
         width: 30%;
-        height: 2rem;
+        height: 3rem;
         margin: 1rem;
         padding: 1rem;
    
